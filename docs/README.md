@@ -15,4 +15,4 @@ AUTORES:
 ETAPAS FUTURAS: 
  Inlusão de vetores para rankear em lista todas as contas inseridas pelo usuário de maneira crescente da mais próxima do pagamento a mais distante. 
 
-Link de repositório: https://github.com/LucasRodriguesUCB/ProjetoOrganizadordeContas.git
+Link do repositório: https://github.com/LucasRodriguesUCB/ProjetoAlgoritimo.git
