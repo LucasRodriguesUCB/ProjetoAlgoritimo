@@ -1,0 +1,46 @@
+DEFINIÇÃO DE HEADERS
+
+
+Para o Projeto ODC, teremos os seguintes headers:
+
+- entrada.h
+- processamento.h
+- exibicao.h
+- structs.h 
+
+Cada headers irá conter em seu conteúdo: 
+
+- entrada.h
+Declarações das 4 funções públicas do módulo .c  mais o struct compartilhado e o extern float, como abaixo: 
+funções:
+1. lerValorPositivo
+2. lerTodasAsContas
+3. lerVencimento
+4. lerTodosVencimentos
+
+5. extern float valorDisponivel
+6. struct Conta compartilhado
+
+- processamento.h
+Funções públicas presentes no módulo .c do processamento, como abaixo:
+1. calcularTotal
+2. calcularDiferenca
+3. ordenarPorVencimento
+
+4. struct Conta compartilhado
+
+- exibicao.h
+Funções públicas no módulo .c de exibicao como mostrado abaixo:
+1. mostrarCabecalho
+2. mostrarResumo
+3. mostrarRanking
+4. mostrarMensagemFinal
+
+5. struct Conta compartilhado
+
+- structs.h
+1. Definição da struct "Conta"
+
+Não possui nenhuma função pública, e é compartilhado em todos os outros módulos: entrada, processamento, exibicao e também na função principal main.c
+
+

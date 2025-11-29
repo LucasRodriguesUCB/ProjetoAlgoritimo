@@ -1,0 +1,28 @@
+DEFINIÇÃO DE STRUCTS
+
+Struct: [Conta]
+Descrição: [representa a sequência de informações das contas que o usuário irá digitar]
+Campos:
+  - CHAR  [nome]: aqui será definido o nome da conta, exemplo: Água, Energia;
+  - FLOAT [valor]: o valor em R$ a ser a pago de cada conta e também do valor disponível para paga-las. Ex: 233.45;
+  - INT [vencimento]: variável para números inteiros dos dias de vencimento de cada conta. 
+
+
+A scruct Conta armazenará 5 contas fixas diferentes, sendo elas: 
+- Conta de Água
+- Conta de Energia
+- Conta de Gás
+- Conta de Internet
+- Conta de Mercado
+
+Com a struct, cada uma dessas contas terão os seguintes dados para cada uma: 
+- Nome da conta
+- Valor a pagar
+- Dia do vencimento
+
+Como definido no começo do projeto teremos o tamanho máximo de 5 contas, que são as contas fixas mensais mais comuns. Logo, teremos um define para limitar a quantidade de contas.
+
+#define MAX_CONTAS 5
+
+Obs.: A depender da necessidade e melhoria do programa, podemos ainda atualizar essa quantidade máxima para indefinida, abrindo a possibilidade de novas contas ou contas diferentes das definidas previamente sejam possíveis de serem inseridas conforme necessidade do usuário. 
+
