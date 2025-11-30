@@ -39,6 +39,8 @@ clique enter.
 
 
 ## ETRUTURA DAS PASTAS: 
+
+```
 projeto_ODC/
 ├── src/
 │   ├── main.c
@@ -64,6 +66,7 @@ projeto_ODC/
 ├── bin/
 ├── backup/
 └── .gitignore
+```
 
 ## AUTORES: 
  Clara Rodrigues Dias e Lucas Alves Rodrigues
