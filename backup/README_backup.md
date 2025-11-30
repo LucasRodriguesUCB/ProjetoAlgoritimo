@@ -1,15 +1,15 @@
-PROJETO: ORGANIZADOR DE CONTAS (ODC)
+# PROJETO: ORGANIZADOR DE CONTAS (ODC)
 
-OBJETIVO: 
+## OBJETIVO: 
  O objetivo do sistema Organizador de contas é auxiliar pessoas a realizar a somatória de suas contas fixas mensais a serem pagas, mostrar a diferença entre o saldo disponível para a quitação dessas contas ao final da soma destas, e mostrar qual conta necessita de prioridade pois está mais próxima do seu vencimento, através de uma listagem em ordem crescente dos dias de vencimento. 
 
-FUNCIONALIDADES PRINCIPAIS: 
+## FUNCIONALIDADES PRINCIPAIS: 
  1. Calculadora de valores a serem pagos; 
  2. diferença de déficit ou superativ entre valores; 
  3. Listagem da conta mais próxima à mais distante de data do vencimento. 
  4. Ordem das contas com dia do vencimento e valor, para prioridade e urgência de pagamento.
 
-CONTEUDOS EM C UTILIZADOS:
+## CONTEUDOS EM C UTILIZADOS:
  1. Modularização
  2. Structs
  3. Vetores
@@ -22,7 +22,7 @@ CONTEUDOS EM C UTILIZADOS:
  10. String
  11. Variaveis
 
-INTRUÇÕES DE COMPILAÇÃO E EXECUÇÃO:
+## INTRUÇÕES DE COMPILAÇÃO E EXECUÇÃO:
 A compilação do programa será feita somente pelo terminal, seguindo os seguintes comandos: 
 
 - opção 1: Na pasta do projeto, em qualquer campo vazio clique com o botão direito do mouse, escolha a opção "Abrir no terminal" e insira: 
@@ -38,7 +38,9 @@ em seguida, digite: .\bin\projeto.exe
 clique enter.
 
 
-ETRUTURA DAS PASTAS: 
+## ETRUTURA DAS PASTAS: 
+
+```
 projeto_ODC/
 ├── src/
 │   ├── main.c
@@ -64,12 +66,14 @@ projeto_ODC/
 ├── bin/
 ├── backup/
 └── .gitignore
+```
 
-AUTORES: 
+## AUTORES: 
  Clara Rodrigues Dias e Lucas Alves Rodrigues
 
-CONSIDERAÇÕES FINAIS: 
+## CONSIDERAÇÕES FINAIS: 
  Projeto desenvolvido durante a sequência de aulas da disciplina "Algoritmos e Programação Estruturada", ministrada pela docente Mestra Jessica Sousa Oliveira, na Universidade Católica de Brasília, durante o segundo semestre de 2025. 
 
 
-Link do repositório: https://github.com/LucasRodriguesUCB/Projeto_ODC.git
+## Link do repositório: 
+https://github.com/LucasRodriguesUCB/Projeto_ODC.git
