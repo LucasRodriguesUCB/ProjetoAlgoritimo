@@ -1,0 +1,31 @@
+ANALISE DE REFATORAÇÃO
+
+Baseado no Registro de testes (projeto_ODC/docs/registro_de_testes.docx), a reexecução dos mesmos casos, agora com a modularização do projeto geraram os seguintes resultados: 
+
+1. Teste de entrada de dados válidos sem casa decimal para "digite o valor das contas a pagar" continua gerando o valor esperado
+
+2. Teste de entrada de dados válidos com casa decimal para "digite o valor das contas a pagar", continua gerando o resultado esperado. 
+
+3. Teste com números inválidos:
+ - Teste de entrada de dados com número inválido (número negativo) para R$, continua gerando o resultado esperado em "digite o valor das contas a pagar" e "digite o valor disponível para pagamento". O programa informa que o valor está incorreto e solicita o usuário para digitar um valor positivo. 
+
+.- Teste de entrada de dados com número inválido fora do intervalo (1 a 31) para "digite o dia do vencimento da conta x" continua gerando o resultado esperado. O programa informa que o valor está incorreto e solicita o usuário para digitar um valor dentro do intervalo. 
+
+4. Teste de cálculos: Soma e subtração (diferença).
+	- A somatória dos valores a pagar de todas as contas, inseridas pelo usuário, continua gerando o resultado esperado. 
+
+	- A diferença entre o total da soma de contas a pagar e o valor disponível para pagamento, inserido pelo usuário, continua gerando o resultado esperado. 
+
+5. Teste do ranking com ordenação de contas mais próximas do vencimento continua gerando o resultado esperado. 
+
+
+Erros e Bugs:
+
+Foi encontrado durante os testes, o bug do "loop infinito", ocasionado pela possível inserção de caracteres ou valores inválidos nas variáveis, por parte do usuário. 
+
+ - Para as entradas de dados "digite o valor das contas a pagar" e "valor disponível para pagamento", a inserção de letras gerou o loop infinito. 
+
+-`Para a entrada de dados "digite o dia do vencimento da conta x", a inserção de letras e também de número com casas decimais gerou o loop infinito, neste ultimo caso, sendo pelo motivo da variável para os dia ser uma variável INT.
+
+Resolução do problema: foi utilizado função com utilização de string e while para solicitar o usuário a repetir o valor inserido até estar dentro do solicitado. A estrutura dessa função está localizada em projeto_ODC/src/entrada.c.
+

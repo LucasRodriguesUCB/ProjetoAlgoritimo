@@ -1,0 +1,63 @@
+DEFINIÇÃO DE MODULOS
+
+O projeto ODC é dividio logicamente em:
+
+- Entrada de dados
+- Processamento desses dados 
+- Exibição final dos dados 
+
+Para cada uam dessas etapas, foi cirado os seguintes arquivos: 
+
+1. 	Módulo: Main
+Arquivo: [main.c]
+Funções:
+  -  função main()
+Dependências:
+  - structs.h
+  - entrada.h
+  - processamento.h
+  - exibicao.h
+
+
+2. 	Módulo: Entrada de Dados
+Arquivo: [entrada.c]
+Header: [entrada.h]
+Funções:
+  - float lerValorPositivo();
+  - float lerValorCerto();
+  - int lerVencimento();
+  - int lerDataCerta();
+  - void lerTodasAsContas();
+  - void lerTodosVencimentos();
+Dependências:
+  - structs.h 
+  - float valorDisponivel (variável global)
+
+
+3. 	Módulo: Processamento de Dados
+Arquivo: [processamento.c]
+Header: [processamento.h]
+Funções:
+  - float calcularTotal();
+  - float calcularDiferenca();
+  - void ordenarPorVencimento().
+Dependências:
+  - structs.h
+
+
+4. 	Módulo: Exibição de dados (interface/ saida de dados)
+Arquivo: [exibicao.c]
+Header: [exibicao.h]
+Funções:
+  - void mostrarCabecalho();
+  - void mostrarResumo();
+  - void mostrarRanking();
+  - void mostrarMensagemFinal.
+Dependências:
+  -  structs.h
+
+5.	Módulo: structs.h
+Arquivo: [structs.h]
+Header[structs.h]
+Dependências:
+  - nenhuma.
